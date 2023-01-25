@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ktf-Ss-ZFF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Pq-JY-k7x">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,10 +8,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Friends-->
+        <scene sceneID="kS9-Dt-tev">
+            <objects>
+                <viewController id="BK7-1w-8Qv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dcd-Ea-z9t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iwW-cm-gMi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friends" image="icons8-люди,-работающие-вместе-50" id="xKE-9F-a3q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIA-S7-wVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-558" y="786"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OvL-lT-70E">
+            <objects>
+                <tabBarController id="4Pq-JY-k7x" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BJO-4T-Gwm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ktf-Ss-ZFF" kind="relationship" relationship="viewControllers" id="P7V-y7-gVH"/>
+                        <segue destination="BK7-1w-8Qv" kind="relationship" relationship="viewControllers" id="McV-XK-GnC"/>
+                        <segue destination="2Rd-ew-cC1" kind="relationship" relationship="viewControllers" id="P6N-jR-NO9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4C-zD-NAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1199" y="24"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="NF9-ti-ckZ">
             <objects>
                 <navigationController id="ktf-Ss-ZFF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="mPS-Xh-AfJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="00d-gs-bxl">
                         <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -40,7 +76,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="55"/>
+                                        <integer key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
@@ -127,7 +163,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="nq5-Ya-5kD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yC6-aF-DyT">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-механический-анализ-50" id="yC6-aF-DyT">
                             <connections>
                                 <segue destination="siW-hX-XJC" kind="show" id="1kO-dh-5T2"/>
                             </connections>
@@ -157,8 +193,27 @@
             </objects>
             <point key="canvasLocation" x="1814" y="24"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="gC5-fp-wkG">
+            <objects>
+                <viewController id="2Rd-ew-cC1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ey1-7b-EBr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JBW-CM-6iK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="icons8-карты-гугл-50" id="32Y-RU-a93"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iex-pk-irb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1418" y="785"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="icons8-карты-гугл-50" width="25" height="25"/>
+        <image name="icons8-люди,-работающие-вместе-50" width="25" height="25"/>
+        <image name="icons8-механический-анализ-50" width="50" height="50"/>
         <image name="image2" width="235" height="215"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
