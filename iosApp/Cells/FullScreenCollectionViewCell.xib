@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FullScreenCollectionViewCell" customModule="iosApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="394"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="394"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CH-LG-Hti">
+                        <rect key="frame" x="0.0" y="0.0" width="421" height="394"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ngz-g8-vZP">
+                                <rect key="frame" x="0.0" y="0.0" width="421" height="394"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="Ngz-g8-vZP" secondAttribute="height" id="3bP-eD-gml"/>
+                            <constraint firstItem="Ngz-g8-vZP" firstAttribute="bottom" secondItem="YD8-0D-MHE" secondAttribute="bottom" id="Fa1-5d-78G"/>
+                            <constraint firstItem="Ngz-g8-vZP" firstAttribute="top" secondItem="YD8-0D-MHE" secondAttribute="top" id="Ja4-4p-tte"/>
+                            <constraint firstAttribute="width" secondItem="Ngz-g8-vZP" secondAttribute="width" id="K4s-sg-Uix"/>
+                            <constraint firstAttribute="bottom" secondItem="Ngz-g8-vZP" secondAttribute="bottom" id="L9z-S7-Vnl"/>
+                            <constraint firstAttribute="trailing" secondItem="Ngz-g8-vZP" secondAttribute="trailing" id="fqZ-Hy-1NY"/>
+                            <constraint firstItem="Ngz-g8-vZP" firstAttribute="leading" secondItem="YD8-0D-MHE" secondAttribute="leading" id="hq4-n1-Lah"/>
+                            <constraint firstItem="Ngz-g8-vZP" firstAttribute="trailing" secondItem="YD8-0D-MHE" secondAttribute="trailing" id="ssE-FA-ecm"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="4oN-JW-B1t"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="YD8-0D-MHE"/>
+                    </scrollView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1CH-LG-Hti" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9fX-9D-fgB"/>
+                <constraint firstItem="1CH-LG-Hti" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="1" id="ACw-DO-kQa"/>
+                <constraint firstItem="1CH-LG-Hti" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Ko2-H5-Vcm"/>
+                <constraint firstItem="1CH-LG-Hti" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" priority="1" id="du6-JQ-zTn"/>
+            </constraints>
+            <size key="customSize" width="419" height="394"/>
+            <connections>
+                <outlet property="photoView" destination="Ngz-g8-vZP" id="Ncz-fb-Mda"/>
+                <outlet property="scrollView" destination="Ngz-g8-vZP" id="lv1-Qh-0Ll"/>
+            </connections>
+            <point key="canvasLocation" x="359.5419847328244" y="139.43661971830986"/>
+        </collectionViewCell>
+    </objects>
+</document>
