@@ -19,6 +19,7 @@
 		D595A1A22980742F00715CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D595A1A02980742F00715CD8 /* Main.storyboard */; };
 		D595A1A42980743000715CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D595A1A32980743000715CD8 /* Assets.xcassets */; };
 		D595A1A72980743000715CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D595A1A52980743000715CD8 /* LaunchScreen.storyboard */; };
+		D5F83C9829852F2D00565A12 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F83C9729852F2D00565A12 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D595A1A32980743000715CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D595A1A62980743000715CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D595A1A82980743000715CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F83C9729852F2D00565A12 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				D52533DE2981538C000523F7 /* PhotoGallery.swift */,
 				D52533E4298180D2000523F7 /* Cells */,
 				D52533E52983F9E3000523F7 /* FullScreenViewController.swift */,
+				D5F83C9729852F2D00565A12 /* SettingsTableViewController.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				D52533E229818052000523F7 /* PhotoCollectionViewCell.swift in Sources */,
 				D595A19B2980742E00715CD8 /* AppDelegate.swift in Sources */,
 				D595A19D2980742E00715CD8 /* SceneDelegate.swift in Sources */,
+				D5F83C9829852F2D00565A12 /* SettingsTableViewController.swift in Sources */,
 				D52533DF2981538C000523F7 /* PhotoGallery.swift in Sources */,
 				D52533E62983F9E3000523F7 /* FullScreenViewController.swift in Sources */,
 				D52533EB2984013D000523F7 /* FullScreenCollectionViewCell.swift in Sources */,

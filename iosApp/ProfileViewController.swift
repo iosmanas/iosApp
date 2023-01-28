@@ -15,6 +15,8 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var nameField: UILabel!
+    
     let idetifire = "PhotoCollectionViewCell"
     let photoGallery = PhotoGallery()
     
@@ -34,6 +36,15 @@ class ProfileViewController: UIViewController {
         collectionView.dataSource = self
         
         collectionView.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: idetifire)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let name = UserDefaults.standard.string(forKey: "nameKey"){
+            nameField.text = name
+
+        }
+        
     }
 
 
