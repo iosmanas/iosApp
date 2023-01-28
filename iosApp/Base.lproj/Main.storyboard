@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -498,18 +499,33 @@
         <!--Map-->
         <scene sceneID="gC5-fp-wkG">
             <objects>
-                <viewController id="2Rd-ew-cC1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="2Rd-ew-cC1" customClass="MapViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ey1-7b-EBr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-AU-mim">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JBW-CM-6iK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v0E-AU-mim" firstAttribute="trailing" secondItem="JBW-CM-6iK" secondAttribute="trailing" id="1Z5-sv-jik"/>
+                            <constraint firstItem="v0E-AU-mim" firstAttribute="top" secondItem="Ey1-7b-EBr" secondAttribute="top" id="GgT-fU-5Hl"/>
+                            <constraint firstItem="v0E-AU-mim" firstAttribute="bottom" secondItem="JBW-CM-6iK" secondAttribute="bottom" id="JMq-me-1o7"/>
+                            <constraint firstItem="v0E-AU-mim" firstAttribute="leading" secondItem="JBW-CM-6iK" secondAttribute="leading" id="YKU-VI-A3K"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="icons8-карты-гугл-50" id="32Y-RU-a93"/>
+                    <connections>
+                        <outlet property="mapView" destination="v0E-AU-mim" id="4jd-Be-gix"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iex-pk-irb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1418" y="785"/>
+            <point key="canvasLocation" x="-1418.4000000000001" y="784.72906403940885"/>
         </scene>
         <!--Friends-->
         <scene sceneID="9Gl-Vv-goZ">

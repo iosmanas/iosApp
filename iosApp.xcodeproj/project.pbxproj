@@ -16,6 +16,7 @@
 		D55395A729859B8500F8FD7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55395A629859B8500F8FD7B /* User.swift */; };
 		D55395A929859FDB00F8FD7B /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55395A829859FDB00F8FD7B /* ModelUser.swift */; };
 		D55395AB2985ABBC00F8FD7B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55395AA2985ABBC00F8FD7B /* UserViewController.swift */; };
+		D55395AD2985C55A00F8FD7B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55395AC2985C55A00F8FD7B /* MapViewController.swift */; };
 		D595A19B2980742E00715CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A19A2980742E00715CD8 /* AppDelegate.swift */; };
 		D595A19D2980742E00715CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A19C2980742E00715CD8 /* SceneDelegate.swift */; };
 		D595A19F2980742F00715CD8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A19E2980742F00715CD8 /* ProfileViewController.swift */; };
@@ -37,6 +38,7 @@
 		D55395A629859B8500F8FD7B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D55395A829859FDB00F8FD7B /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		D55395AA2985ABBC00F8FD7B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		D55395AC2985C55A00F8FD7B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D595A1972980742E00715CD8 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595A19A2980742E00715CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D595A19C2980742E00715CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				D55395A629859B8500F8FD7B /* User.swift */,
 				D55395A829859FDB00F8FD7B /* ModelUser.swift */,
 				D55395AA2985ABBC00F8FD7B /* UserViewController.swift */,
+				D55395AC2985C55A00F8FD7B /* MapViewController.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				D52533E62983F9E3000523F7 /* FullScreenViewController.swift in Sources */,
 				D52533EB2984013D000523F7 /* FullScreenCollectionViewCell.swift in Sources */,
 				D55395A729859B8500F8FD7B /* User.swift in Sources */,
+				D55395AD2985C55A00F8FD7B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
